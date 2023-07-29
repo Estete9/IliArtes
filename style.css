@@ -27,3 +27,15 @@ header {
   font-weight: 700;
   line-height: 20px;
 }
+
+#menu {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu.show {
+  display: flex;
+}
