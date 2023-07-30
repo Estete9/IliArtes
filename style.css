@@ -6,6 +6,14 @@
   list-style: none;
 }
 
+hr {
+  border: 1px solid #a04038;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
 header {
   display: flex;
   padding: 6px 23px;
@@ -92,4 +100,72 @@ header {
   padding: 17px 14px;
   background-color: #f8f8f8;
   border: 4px solid #fff;
+}
+
+#programs-wrapper {
+  background-image: url(./assets/Mobile/main-program/bkg-main-program.jpg);
+  background-size: 215%;
+  background-size: 215%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  height: 100vh;
+}
+
+#program-section-title {
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.8px;
+  margin-top: 30px;
+}
+
+.program {
+  background-color: #3b3e4581;
+  display: grid;
+  column-gap: 12px;
+  grid-template-columns: 1fr 2fr 6fr;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+
+.program > h3 {
+  color: #ff5438;
+  font-size: 14.271px;
+  font-weight: 700;
+  line-height: 24.975px;
+  letter-spacing: -0.143px;
+}
+
+.program > p {
+  color: #fff;
+  font-size: 10.703px;
+  font-weight: 700;
+  line-height: 22.299px;
+  letter-spacing: 0.642px;
+}
+
+.programs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.cta {
+  display: flex;
+  padding: 20px 50px;
+  margin-top: 5%;
+  background-color: #ff4f38;
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px; /* 175% */
+  letter-spacing: -0.16px;
+  border: none;
+  cursor: pointer;
 }
