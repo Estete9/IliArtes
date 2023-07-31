@@ -71,13 +71,18 @@ header {
 
 .subtitle {
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 0.7rem;
+  margin-left: 65%;
 }
 
 .title {
   margin-top: -20px;
   font-weight: 900;
   font-size: 2rem;
+}
+
+.title > span {
+  font-size: 1.5rem;
 }
 
 #hero-section p:nth-child(5) {
@@ -103,7 +108,7 @@ header {
   border: 4px solid #fff;
 }
 
-#programs-wrapper {
+#materials-wrapper {
   background-image: url(../assets/Mobile/main-program/bkg-main-program.jpg);
   background-size: 215%;
   background-size: 215%;
@@ -114,7 +119,7 @@ header {
   height: 100vh;
 }
 
-#program-section-title {
+#material-section-title {
   color: #fff;
   font-family: Lato;
   font-size: 20px;
@@ -125,12 +130,12 @@ header {
   margin-top: 30px;
 }
 
-.program > img {
+.material > img {
   width: 57.085px;
   height: 51.733px;
 }
 
-.program {
+.material {
   background-color: #3b3e4581;
   display: grid;
   column-gap: 12px;
@@ -140,15 +145,16 @@ header {
   padding: 6px;
 }
 
-.program > h3 {
+.material > h3 {
   color: #ff5438;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 24.975px;
+  line-height: 18px;
   letter-spacing: -0.143px;
+  text-align: start;
 }
 
-.program > p {
+.material > p {
   color: #fff;
   font-size: 0.7rem;
   font-weight: 700;
@@ -156,7 +162,7 @@ header {
   letter-spacing: 0.642px;
 }
 
-.programs-list {
+.materials-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
