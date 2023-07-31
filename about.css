@@ -1,5 +1,7 @@
 .title {
   margin: 0;
+  line-height: 44px;
+  margin-bottom: 55.26px;
 }
 
 .subtitle {
@@ -7,7 +9,23 @@
   font-size: 1.5rem;
 }
 
+#about-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 250px;
+  margin-top: 15px;
+  margin-bottom: 52px;
+}
+
+#about-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 #about-header + p:nth-of-type(1) {
+  background-color: #fff;
   color: #000;
   text-align: center;
   font-family: Lato;
@@ -16,6 +34,8 @@
   font-weight: 400;
   line-height: 25px;
   letter-spacing: -0.84px;
+  padding: 20px 12px;
+  margin-bottom: 50px;
 }
 #about-header + p + p {
   display: flex;
@@ -25,8 +45,11 @@
   text-align: center;
   font-size: 12px;
   font-weight: 700;
+  margin: 0 8%;
+  margin-bottom: 25px;
 }
 #about-header + p + p > a {
+  margin-top: 5px;
   text-decoration: none;
   color: #5f5f5f;
   text-align: center;
@@ -35,4 +58,79 @@
   line-height: 25px;
   letter-spacing: 0.24px;
   text-decoration-line: underline;
+}
+
+#about-section {
+  /* padding: 5px 20px; */
+  /* background-image: url(../assets/Mobile/hero/mobile-bkg-with-icons.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%; */
+}
+
+#about-wrapper {
+  background-image: url(../assets/Mobile/hero/mobile-bkg-with-icons.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  padding: 10px 0;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-image: url(../assets/Mobile/about/Hero-convention.jpg);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 35px;
+}
+
+#TODO-change {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+#TODO-change h3 {
+  text-align: center;
+  margin: 0 15%;
+}
+
+#TODO-change hr {
+  margin: 20px 0;
+}
+
+#TODO-change p {
+  color: #838383;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.48px;
+}
+
+#about-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 35px;
+  width: 100%;
 }
