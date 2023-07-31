@@ -124,6 +124,11 @@ header {
   margin-top: 30px;
 }
 
+.program > img {
+  width: 57.085px;
+  height: 51.733px;
+}
+
 .program {
   background-color: #3b3e4581;
   display: grid;
@@ -136,7 +141,7 @@ header {
 
 .program > h3 {
   color: #ff5438;
-  font-size: 14.271px;
+  font-size: 0.8rem;
   font-weight: 700;
   line-height: 24.975px;
   letter-spacing: -0.143px;
@@ -144,7 +149,7 @@ header {
 
 .program > p {
   color: #fff;
-  font-size: 10.703px;
+  font-size: 0.7rem;
   font-weight: 700;
   line-height: 22.299px;
   letter-spacing: 0.642px;
