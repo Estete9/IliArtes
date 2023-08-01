@@ -29,6 +29,13 @@ header {
   width: 100vw;
   height: inherit;
 }
+header nav {
+  display: contents;
+}
+
+header nav img {
+  width: 10%;
+}
 
 #logo {
   display: block;
@@ -349,6 +356,9 @@ header {
   flex-direction: column;
   align-items: center;
 }
+footer {
+  display: none;
+}
 
 /* -----------------------------------------------------Start  of desktop styling ------------------------------------------------------------------------------------ */
 @media screen and (min-width: 768px) {
@@ -356,7 +366,7 @@ header {
     height: 22vh;
   }
 
-  #menu-btn {
+  header nav {
     display: none;
   }
 
@@ -494,5 +504,8 @@ header {
 
   #products-section > .cta.more {
     display: none;
+  }
+  footer {
+    display: block;
   }
 }
