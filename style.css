@@ -18,7 +18,8 @@ hr {
 header {
   display: flex;
   padding: 6px 23px;
-  height: 51px;
+  height: 10vh;
+  align-items: center;
 }
 
 #logo-container {
@@ -26,10 +27,12 @@ header {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  height: inherit;
 }
 
 #logo {
   display: block;
+  height: inherit;
   text-decoration: none;
   text-align: center;
   font-size: 18px;
@@ -45,6 +48,18 @@ header {
   gap: 12px;
   justify-content: center;
   align-items: center;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #ac5992;
+}
+
+#logo-container img {
+  height: 80%;
+  width: auto;
 }
 
 #menu.show {
@@ -337,9 +352,9 @@ header {
 
 /* -----------------------------------------------------Start  of desktop styling ------------------------------------------------------------------------------------ */
 @media screen and (min-width: 768px) {
-  /* header {
-
-  } */
+  header {
+    height: 22vh;
+  }
 
   #menu-btn {
     display: none;
@@ -348,7 +363,7 @@ header {
   #menu {
     order: 1;
     display: flex;
-    flex-direction: row;
+    margin-right: 7%;
   }
 
   #hero-section > * {
@@ -356,8 +371,10 @@ header {
     margin-left: 10%;
   }
   #hero-section > .subtitle {
-    margin-left: 60%;
+    margin-left: 65%;
     font-size: 1.1rem;
+    font-weight: bold;
+    font-style: italic;
   }
 
   #hero-section > .title {
