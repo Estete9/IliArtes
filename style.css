@@ -255,11 +255,35 @@ header nav img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+.product-img-wrapper:hover {
+  height: 27vh;
 }
 
 .product-img {
   max-width: 100%;
-  /* max-height: 140%; */
+}
+
+.product-content {
+  padding: 15px 0 0 0;
+  padding: 17px;
+}
+
+#products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#products-section-title {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -1px;
 }
 
 .product-content > :first-child {
@@ -297,24 +321,6 @@ header nav img {
   font-weight: 700;
   line-height: 14px;
   letter-spacing: -0.54px;
-}
-
-.product-content {
-  padding: 15px 0 0 0;
-}
-
-#products-list {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-#products-section-title {
-  color: #000;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: -1px;
 }
 
 #products-section-title + hr {
@@ -377,6 +383,7 @@ header nav img {
   align-items: center;
   padding: 5% 17%;
   gap: 65px;
+  max-width: 90%;
 }
 
 #footer-content {
@@ -526,6 +533,12 @@ footer {
 
   .product {
     grid-template-rows: auto;
+    transition: all;
+    transition-duration: 0.3s;
+  }
+
+  .product:hover {
+    grid-template-columns: 2fr 1fr;
   }
 
   #products-section > .cta.more {
