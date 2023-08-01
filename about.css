@@ -1,6 +1,13 @@
 .title {
   margin: 0;
   line-height: 44px;
+  font-size: 4rem;
+  background-image: url('./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg');
+  background-clip: text;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-right: auto;
 }
 
 #about-logo {
