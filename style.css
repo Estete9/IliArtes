@@ -38,7 +38,7 @@ header nav img {
 }
 
 #logo {
-  display: block;
+  display: flex;
   height: inherit;
   text-decoration: none;
   text-align: center;
@@ -59,14 +59,32 @@ header nav img {
 
 #menu a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 900;
   color: #ac5992;
+  transition: all;
+  transition-duration: 0.3s;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid transparent;
+}
+
+#menu a:hover {
+  border: 2px solid #ac5992;
+  border-collapse: collapse;
+  font-size: 1.5rem;
 }
 
 #logo-container img {
   height: 80%;
   width: auto;
+  margin: auto;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+#logo-container img:hover {
+  height: 90%;
 }
 
 #menu.show {
@@ -313,6 +331,7 @@ header nav img {
 #partners-list {
   display: flex;
   gap: 50px;
+  align-items: center;
 }
 
 #partners {
@@ -324,8 +343,8 @@ header nav img {
 }
 
 #partners-list img {
-  max-width: 10vw;
-  filter: invert(0.6);
+  max-width: 12vw;
+  filter: invert(0.5);
 }
 
 #partners h1 {
@@ -377,7 +396,7 @@ footer {
 
   #hero-section > .title {
     font-size: 4rem;
-    background-image: url("./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg");
+    background-image: url('./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg');
     background-clip: text;
     background-size: cover;
     -webkit-background-clip: text;
