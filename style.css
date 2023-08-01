@@ -51,7 +51,7 @@ header nav img {
 
 #menu {
   display: none;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 12px;
   justify-content: center;
   align-items: center;
@@ -78,7 +78,7 @@ header nav img {
   flex-direction: column;
   gap: 30px;
   height: calc(100vh - 51px);
-  background: url(../assets/Mobile/hero/mobile-bkg-with-icons.jpg) no-repeat;
+  background: url(./assets/Mobile/hero/mobile-bkg-with-icons.jpg) no-repeat;
   background-size: cover;
   padding: 15% 12px 0 12px;
 }
@@ -131,7 +131,7 @@ header nav img {
 }
 
 #materials-wrapper {
-  background-image: url(../assets/Mobile/main-program/bkg-main-program.jpg);
+  background-image: url(./assets/Mobile/main-program/bkg-main-program.jpg);
   background-size: 215%;
   background-size: 215%;
   align-items: center;
@@ -363,7 +363,7 @@ footer {
 /* -----------------------------------------------------Start  of desktop styling ------------------------------------------------------------------------------------ */
 @media screen and (min-width: 768px) {
   header {
-    height: 22vh;
+    height: 27vh;
   }
 
   header nav {
@@ -373,7 +373,9 @@ footer {
   #menu {
     order: 1;
     display: flex;
-    margin-right: 7%;
+    margin-right: 15%;
+    position: absolute;
+    right: 0;
   }
 
   #hero-section > * {
