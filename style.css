@@ -214,6 +214,23 @@ header nav img {
   cursor: pointer;
 }
 
+#socials {
+  display: flex;
+}
+
+.social img {
+  max-height: 100px;
+  padding: 15px;
+}
+#footer-title {
+  background-image: url(./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg);
+  background-clip: text;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-right: auto;
+}
+
 #materials-wrapper > a {
   display: none;
   color: #fff;
