@@ -298,10 +298,41 @@ header {
 
 #partners-list {
   display: flex;
+  gap: 50px;
+}
+
+#partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 120px;
+  background-color: #414246;
 }
 
 #partners-list img {
   max-width: 10vw;
+  filter: invert(0.6);
+}
+
+#partners h1 {
+  color: #8f8f91;
+}
+
+#partners hr {
+  margin-bottom: 50px;
+}
+
+#footer-section {
+  display: flex;
+  align-items: center;
+  padding: 5% 17%;
+  gap: 65px;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* -----------------------------------------------------Start  of desktop styling ------------------------------------------------------------------------------------ */
