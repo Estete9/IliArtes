@@ -90,6 +90,20 @@
   width: 100%;
 }
 
+#about-logo-wrapper img {
+  animation: heartbeat 4s infinite;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(0.8); /* Initial and final size of the image */
+  }
+  50% {
+    transform: scale(1.2); /* Scale the image up during the "heartbeat" */
+  }
+}
+
 #about-wrapper hr:first-of-type {
   display: none;
 }
