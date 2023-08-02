@@ -280,11 +280,11 @@ header nav img {
   justify-content: center;
   align-items: center;
   transition: all;
-  transition-duration: 0.6s;
+  transition-duration: 3s;
 }
 
 .product-img-wrapper:hover {
-  height: 27vh;
+  height: 100%;
 }
 
 .product-img {
@@ -294,6 +294,14 @@ header nav img {
 .product-content {
   padding: 15px 0 0 0;
   padding: 17px;
+  transition: all;
+  transition-duration: 3s;
+}
+
+.product-content:hover {
+  
+  padding: 5px 0 0 0;
+  padding: 5px;
 }
 
 #products-list {
@@ -558,7 +566,7 @@ footer {
   .product {
     grid-template-rows: auto;
     transition: all;
-    transition-duration: 0.3s;
+    transition-duration: 1s;
   }
 
   .product:hover {
