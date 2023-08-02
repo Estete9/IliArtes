@@ -567,6 +567,7 @@ footer {
     display: flex;
     flex-direction: row;
     padding: 13px;
+    width: 100%;
   }
 
   #menu li:last-child a {
@@ -596,7 +597,7 @@ footer {
 
   #logo-container {
     display: flex;
-    margin-right: 23vw;
+    margin-left: 5%;
   }
 
   #logo {
