@@ -539,7 +539,7 @@ footer {
 }
 
 /* -----------------------------------------------------Start  of desktop styling ------------------------------------------------------------------------------------ */
-@media screen and (width >=768px) {
+@media screen and (width >= 768px) {
   #hero-section > .subtitle {
     color: #e40c13;
     font-size: 1.7rem;

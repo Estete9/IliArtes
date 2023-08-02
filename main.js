@@ -51,11 +51,12 @@ const productsArr = [
 ];
 
 const productsList = document.getElementById('products-list');
+const moreBtn = document.querySelector('.cta.more');
 
 let expanded = false;
 
 function populateProducts() {
-  productsList.innerHTML = ``;
+  productsList.innerHTML = '';
   let counter = 0;
 
   if (!expanded) {
@@ -104,7 +105,6 @@ function showAllProjects() {
   populateProducts();
 }
 
-const moreBtn = document.querySelector('.cta.more');
 moreBtn.addEventListener('click', showAllProjects);
 
 // MOBILE MENU LOGIC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -117,7 +117,7 @@ let showMenu = true;
 
 function openMobileMenu() {
   if (showMenu) {
-    logoContainer.style.display = "none"
+    logoContainer.style.display = 'none';
     console.log('open menu');
     menu.className = 'mobile';
     menuClose.className = 'mobile';
