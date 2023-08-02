@@ -30,7 +30,7 @@ header {
   height: inherit;
 }
 
-header > img {
+header>img {
   display: none;
   position: absolute;
   top: 3%;
@@ -39,7 +39,7 @@ header > img {
   width: auto;
 }
 
-header > img.mobile {
+header>img.mobile {
   display: flex;
   max-height: 25px;
 }
@@ -146,7 +146,7 @@ header nav img {
   color: transparent;
 }
 
-.title > span {
+.title>span {
   font-size: 1.5rem;
 }
 
@@ -184,7 +184,7 @@ header nav img {
   margin-top: 30px;
 }
 
-.material > img {
+.material>img {
   width: 57.085px;
   height: 51.733px;
 }
@@ -199,7 +199,7 @@ header nav img {
   padding: 6px;
 }
 
-.material > h3 {
+.material>h3 {
   color: #ff5438;
   font-size: 1rem;
   font-weight: 700;
@@ -208,7 +208,7 @@ header nav img {
   text-align: start;
 }
 
-.material > p {
+.material>p {
   color: #fff;
   font-size: 0.7rem;
   font-weight: 700;
@@ -254,7 +254,7 @@ header nav img {
   margin-right: auto;
 }
 
-#materials-wrapper > a {
+#materials-wrapper>a {
   display: none;
   color: #fff;
   font-size: 20px;
@@ -320,7 +320,7 @@ header nav img {
   letter-spacing: -1px;
 }
 
-.product-content > :first-child {
+.product-content> :first-child {
   color: #000;
   font-size: 15px;
   font-weight: 700;
@@ -328,7 +328,7 @@ header nav img {
   letter-spacing: -0.3px;
 }
 
-.product-content > p:first-of-type {
+.product-content>p:first-of-type {
   color: #f78c89;
   font-size: 10px;
   font-weight: 700;
@@ -336,7 +336,7 @@ header nav img {
   letter-spacing: -0.2px;
 }
 
-.product-content > hr {
+.product-content>hr {
   width: 20px;
   margin: 12px 0 6px 0;
   background: #d9d9d9;
@@ -349,7 +349,7 @@ header nav img {
   align-items: center;
 }
 
-.product-content > p:last-of-type {
+.product-content>p:last-of-type {
   color: #000;
   font-size: 9px;
   font-weight: 700;
@@ -357,7 +357,7 @@ header nav img {
   letter-spacing: -0.54px;
 }
 
-#products-section-title + hr {
+#products-section-title+hr {
   margin: 4px 0 30px 0;
 }
 
@@ -365,7 +365,7 @@ header nav img {
   padding: 15px 12px 32px 12px;
 }
 
-#products-section > .cta.more {
+#products-section>.cta.more {
   display: flex;
   background-color: transparent;
   border-radius: 4px;
@@ -423,6 +423,7 @@ header nav img {
   flex-direction: column;
   align-items: center;
 }
+
 footer {
   display: none;
 }
@@ -445,12 +446,12 @@ footer {
     right: 0;
   }
 
-  #hero-section > * {
+  #hero-section>* {
     max-width: 65%;
     margin-left: 10%;
   }
 
-  #hero-section > .title {
+  #hero-section>.title {
     font-size: 4rem;
     background-image: url('./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg');
     background-clip: text;
@@ -460,11 +461,11 @@ footer {
     margin-right: auto;
   }
 
-  #hero-section > .title > span {
+  #hero-section>.title>span {
     font-size: 2.6rem;
   }
 
-  #hero-section > p:first-of-type {
+  #hero-section>p:first-of-type {
     color: #515151;
     font-size: 25.49px;
     font-weight: 400;
@@ -490,11 +491,11 @@ footer {
     letter-spacing: -0.3px;
   }
 
-  #products-wrapper > .section-title {
+  #products-wrapper>.section-title {
     color: #000;
   }
 
-  #products-wrapper > hr {
+  #products-wrapper>hr {
     margin-bottom: 50px;
   }
 
@@ -515,26 +516,26 @@ footer {
     padding: 12px;
   }
 
-  .material > * {
+  .material>* {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .material > img {
+  .material>img {
     width: 30%;
     height: auto;
     justify-self: center;
   }
 
-  .material > h3 {
+  .material>h3 {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: -0.24px;
   }
 
-  .material > p {
+  .material>p {
     text-align: center;
     font-size: 12px;
     font-weight: 700;
@@ -547,11 +548,11 @@ footer {
     height: auto;
   }
 
-  #materials-wrapper > .cta {
+  #materials-wrapper>.cta {
     display: none;
   }
 
-  #materials-wrapper > a {
+  #materials-wrapper>a {
     display: flex;
     margin-top: 2%;
   }
@@ -572,7 +573,7 @@ footer {
     grid-template-columns: 2fr 1fr;
   }
 
-  #products-section > .cta.more {
+  #products-section>.cta.more {
     display: none;
   }
 
