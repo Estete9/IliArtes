@@ -17,17 +17,49 @@ hr {
 
 header {
   display: flex;
-  padding: 6px 23px;
   height: 10vh;
   align-items: center;
+}
+
+#submenu-container {
+  display: none;
+  width: 100%;
+  height: 42%;
+  background-color: #3e3e3e;
+  justify-content: end;
+}
+
+#submenu {
+  padding: 5px 3%;
+  display: flex;
+  gap: 20px;
+}
+
+.social img {
+  height: 15px;
+  width: auto;
+}
+
+.submenu-item {
+  color: #fff;
 }
 
 #logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo-container-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header > img {
@@ -50,9 +82,26 @@ header nav {
 
 header nav img {
   width: 10%;
+  margin-left: 5%;
 }
 
 #logo {
+  display: flex;
+  height: inherit;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  color: black;
+}
+
+#logo-mobile img {
+  width: 30vw;
+}
+
+#logo-mobile {
   display: flex;
   height: inherit;
   text-decoration: none;
@@ -137,6 +186,7 @@ header nav img {
   margin: auto;
   transition: all;
   transition-duration: 0.3s;
+  
 }
 
 #partners-list img {
@@ -145,7 +195,7 @@ header nav img {
 }
 
 #logo-container img:hover {
-  height: 90%;
+  height: 14vh;
 }
 
 #hero-section {
@@ -500,18 +550,26 @@ footer {
     color: #e40c13;
     font-size: 1.7rem;
   }
+  #logo-container-mobile {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: end;
+  }
 
   header nav {
     display: none;
   }
 
   #menu {
-    order: 1;
     display: flex;
-    margin-right: 15%;
-    position: absolute;
     flex-direction: row;
-    right: 0;
+  }
+
+  #submenu-container {
+    display: flex;
   }
 
   .material > * {
@@ -526,8 +584,19 @@ footer {
   }
 
   #logo-container {
-    justify-content: start;
-    margin-left: 5%;
+    display: flex;
+    margin-right: 23vw;
+  }
+
+  #logo {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo > img {
+    margin: 0;
+    height: 10vw;
+    width: 14vw;
   }
 
   #hero-section > .title {

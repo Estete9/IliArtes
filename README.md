@@ -70,7 +70,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://iliartes.netlify.app)
+- [Live Demo Link](https://estete9.github.io/IliArtes/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +147,8 @@ If you like this project remember to star and share it 🥳️
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Microverse for the support.
+- Behance template by: [CIndy Lin](https://www.behance.net/adagio07)
+- Twitter, Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>, via Wikimedia Commons
 
 <!-- LICENSE -->
 

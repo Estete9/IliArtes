@@ -112,10 +112,12 @@ const mobileMenu = document.querySelector('header nav img');
 const menu = document.getElementById('menu');
 const menuClose = document.querySelector('header > img');
 const menuItems = Array.from(document.querySelectorAll('#menu a'));
+const logoContainer = document.getElementById('logo-container');
 let showMenu = true;
 
 function openMobileMenu() {
   if (showMenu) {
+    logoContainer.style.display = "none"
     console.log('open menu');
     menu.className = 'mobile';
     menuClose.className = 'mobile';
