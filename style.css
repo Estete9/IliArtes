@@ -274,7 +274,8 @@ header nav img {
 }
 
 .product-img-wrapper {
-  height: 19vh;
+  width: 100%;
+  height: 80%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -284,7 +285,7 @@ header nav img {
 }
 
 .product-img-wrapper:hover {
-  height: 100%;
+  height: 90%;
 }
 
 .product-img {
@@ -292,14 +293,16 @@ header nav img {
 }
 
 .product-content {
+  display: flex;
+  flex-direction: column;
   padding: 15px 0 0 0;
   padding: 17px;
   transition: all;
   transition-duration: 3s;
+  margin-bottom: auto;
 }
 
 .product-content:hover {
-  
   padding: 5px 0 0 0;
   padding: 5px;
 }
