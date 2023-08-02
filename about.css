@@ -29,6 +29,20 @@
   text-align: center;
 }
 
+header > img {
+  display: none;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  height: 50px;
+  width: auto;
+}
+
+header > img {
+  display: flex;
+  max-height: 25px;
+}
+
 #about-wrapper {
   height: 90vh;
   background-image: url(../assets/Mobile/hero/mobile-bkg-with-icons.jpg);
@@ -162,10 +176,55 @@
   letter-spacing: -0.48px;
 }
 
+#menu {
+  display: none;
+  flex-direction: column-reverse;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu.mobile {
+  display: flex;
+  position: fixed;
+  top: 2vh;
+  bottom: 2vh;
+  left: 2vh;
+  right: 2vh;
+  background-color: #ac5992a2;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #ac5992;
+  transition: all;
+  transition-duration: 0.3s;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid transparent;
+}
+
+#menu a.mobile {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#menu a:hover {
+  border: 2px solid #ac5992;
+  border-collapse: collapse;
+  font-size: 1.5rem;
+}
+
 /* -----------------------------------------------------Start  of desktop styling ------------------------------------------------------------------------------------ */
 @media screen and (min-width: 768px) {
   #about-header {
     padding: 100px 10px 0 10px;
+  }
+
+  #menu {
+    display: flex;
   }
 
   .title {
