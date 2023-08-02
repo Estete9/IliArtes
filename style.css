@@ -30,7 +30,7 @@ header {
   height: inherit;
 }
 
-header>img {
+header > img {
   display: none;
   position: absolute;
   top: 3%;
@@ -39,7 +39,7 @@ header>img {
   width: auto;
 }
 
-header>img.mobile {
+header > img.mobile {
   display: flex;
   max-height: 25px;
 }
@@ -99,10 +99,30 @@ header nav img {
   font-size: 1.5rem;
 }
 
+#materials-wrapper > a {
+  display: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  text-decoration-line: underline;
+}
+
 #menu a:hover {
   border: 2px solid #ac5992;
   border-collapse: collapse;
   font-size: 1.5rem;
+}
+
+.material > img {
+  width: 57.085px;
+  height: 51.733px;
+}
+
+.social img {
+  max-height: 100px;
+  padding: 15px;
 }
 
 #logo-container img {
@@ -111,6 +131,11 @@ header nav img {
   margin: auto;
   transition: all;
   transition-duration: 0.3s;
+}
+
+#partners-list img {
+  max-width: 12vw;
+  filter: invert(0.5);
 }
 
 #logo-container img:hover {
@@ -125,6 +150,30 @@ header nav img {
   background: url(./assets/Mobile/hero/mobile-bkg-with-icons.jpg) no-repeat;
   background-size: cover;
   padding: 8% 12px 0 12px;
+}
+
+.material > p {
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 22.299px;
+  letter-spacing: 0.642px;
+}
+
+.product-content > p:first-of-type {
+  color: #f78c89;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14.943px;
+  letter-spacing: -0.2px;
+}
+
+.product-content > p:last-of-type {
+  color: #000;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.54px;
 }
 
 #hero-section p {
@@ -146,13 +195,13 @@ header nav img {
   color: transparent;
 }
 
-.title>span {
+.title > span {
   font-size: 1.5rem;
 }
 
 #hero-section p:nth-of-type(2) {
   color: #868686;
-  font-family: Gothic A1;
+  font-family: Gothic A1, sans-serif;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: -0.26px;
@@ -166,7 +215,6 @@ header nav img {
 
 #materials-wrapper {
   background-image: url(./assets/Mobile/main-program/bkg-main-program.jpg);
-  background-size: 215%;
   background-size: 215%;
   align-items: center;
   display: flex;
@@ -184,11 +232,6 @@ header nav img {
   margin-top: 30px;
 }
 
-.material>img {
-  width: 57.085px;
-  height: 51.733px;
-}
-
 .material {
   background-color: #3b3e4581;
   display: grid;
@@ -199,21 +242,13 @@ header nav img {
   padding: 6px;
 }
 
-.material>h3 {
+.material > h3 {
   color: #ff5438;
   font-size: 1rem;
   font-weight: 700;
   line-height: 18px;
   letter-spacing: -0.143px;
   text-align: start;
-}
-
-.material>p {
-  color: #fff;
-  font-size: 0.7rem;
-  font-weight: 700;
-  line-height: 22.299px;
-  letter-spacing: 0.642px;
 }
 
 .materials-list {
@@ -240,11 +275,6 @@ header nav img {
   display: flex;
 }
 
-.social img {
-  max-height: 100px;
-  padding: 15px;
-}
-
 #footer-title {
   background-image: url(./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg);
   background-clip: text;
@@ -252,16 +282,6 @@ header nav img {
   -webkit-background-clip: text;
   color: transparent;
   margin-right: auto;
-}
-
-#materials-wrapper>a {
-  display: none;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: -0.2px;
-  text-decoration-line: underline;
 }
 
 .product {
@@ -320,7 +340,7 @@ header nav img {
   letter-spacing: -1px;
 }
 
-.product-content> :first-child {
+.product-content > :first-child {
   color: #000;
   font-size: 15px;
   font-weight: 700;
@@ -328,15 +348,7 @@ header nav img {
   letter-spacing: -0.3px;
 }
 
-.product-content>p:first-of-type {
-  color: #f78c89;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 14.943px;
-  letter-spacing: -0.2px;
-}
-
-.product-content>hr {
+.product-content > hr {
   width: 20px;
   margin: 12px 0 6px 0;
   background: #d9d9d9;
@@ -349,15 +361,7 @@ header nav img {
   align-items: center;
 }
 
-.product-content>p:last-of-type {
-  color: #000;
-  font-size: 9px;
-  font-weight: 700;
-  line-height: 14px;
-  letter-spacing: -0.54px;
-}
-
-#products-section-title+hr {
+#products-section-title + hr {
   margin: 4px 0 30px 0;
 }
 
@@ -365,7 +369,7 @@ header nav img {
   padding: 15px 12px 32px 12px;
 }
 
-#products-section>.cta.more {
+#products-section > .cta.more {
   display: flex;
   background-color: transparent;
   border-radius: 4px;
@@ -395,11 +399,6 @@ header nav img {
   align-items: center;
   padding: 35px 120px;
   background-color: #414246;
-}
-
-#partners-list img {
-  max-width: 12vw;
-  filter: invert(0.5);
 }
 
 #partners h1 {
@@ -446,12 +445,18 @@ footer {
     right: 0;
   }
 
-  #hero-section>* {
+  .material > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero-section > * {
     max-width: 65%;
     margin-left: 10%;
   }
 
-  #hero-section>.title {
+  #hero-section > .title {
     font-size: 4rem;
     background-image: url('./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg');
     background-clip: text;
@@ -461,11 +466,23 @@ footer {
     margin-right: auto;
   }
 
-  #hero-section>.title>span {
+  #hero-section > .title > span {
     font-size: 2.6rem;
   }
 
-  #hero-section>p:first-of-type {
+  .material > p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.72px;
+  }
+
+  #hero-section p {
+    line-height: normal;
+  }
+
+  #hero-section > p:first-of-type {
     color: #515151;
     font-size: 25.49px;
     font-weight: 400;
@@ -480,10 +497,6 @@ footer {
     letter-spacing: -0.552px;
   }
 
-  #hero-section p {
-    line-height: normal;
-  }
-
   .section-title {
     font-size: 30px;
     font-weight: 400;
@@ -491,11 +504,11 @@ footer {
     letter-spacing: -0.3px;
   }
 
-  #products-wrapper>.section-title {
+  #products-wrapper > .section-title {
     color: #000;
   }
 
-  #products-wrapper>hr {
+  #products-wrapper > hr {
     margin-bottom: 50px;
   }
 
@@ -516,31 +529,17 @@ footer {
     padding: 12px;
   }
 
-  .material>* {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .material>img {
+  .material > img {
     width: 30%;
     height: auto;
     justify-self: center;
   }
 
-  .material>h3 {
+  .material > h3 {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: -0.24px;
-  }
-
-  .material>p {
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 0.72px;
   }
 
   #materials-wrapper {
@@ -548,11 +547,11 @@ footer {
     height: auto;
   }
 
-  #materials-wrapper>.cta {
+  #materials-wrapper > .cta {
     display: none;
   }
 
-  #materials-wrapper>a {
+  #materials-wrapper > a {
     display: flex;
     margin-top: 2%;
   }
@@ -573,7 +572,7 @@ footer {
     grid-template-columns: 2fr 1fr;
   }
 
-  #products-section>.cta.more {
+  #products-section > .cta.more {
     display: none;
   }
 
