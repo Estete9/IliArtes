@@ -52,10 +52,22 @@ const productsArr = [
 
 const productsList = document.getElementById('products-list');
 
-for (let i = 0; i < productsArr.length; i += 1) {
-  const product = document.createElement('article');
-  product.className = 'product';
-  const productInnerHTML = `
+let expanded = false;
+
+function populateProducts() {
+  productsList.innerHTML = ``;
+  let counter = 0;
+
+  if (!expanded) {
+    counter = 2;
+  } else {
+    counter = productsArr.length;
+  }
+
+  for (let i = 0; i < counter; i += 1) {
+    const product = document.createElement('article');
+    product.className = 'product';
+    const productInnerHTML = `
     <div class="product-img-wrapper">
       <img
         src="${productsArr[i].imgSrc}"
@@ -76,9 +88,24 @@ for (let i = 0; i < productsArr.length; i += 1) {
       </p>
     </div>
 `;
-  product.innerHTML = productInnerHTML;
-  productsList.appendChild(product);
+    product.innerHTML = productInnerHTML;
+    productsList.appendChild(product);
+  }
 }
+
+function showAllProjects() {
+  if (expanded) {
+    moreBtn.classList.remove('expand');
+    expanded = false;
+  } else {
+    moreBtn.classList.add('expand');
+    expanded = true;
+  }
+  populateProducts();
+}
+
+const moreBtn = document.querySelector('.cta.more');
+moreBtn.addEventListener('click', showAllProjects);
 
 // MOBILE MENU LOGIC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 const mobileMenu = document.querySelector('header nav img');
@@ -116,3 +143,4 @@ function closeMenu() {
 
 mobileMenu.addEventListener('click', openMobileMenu);
 menuClose.addEventListener('click', closeMenu);
+window.onload = populateProducts();
