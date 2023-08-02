@@ -140,9 +140,9 @@ header > img.mobile {
 
 #about-wrapper p:first-of-type {
   background-color: #fff;
-  color: #000;
+  color: #868686;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: -0.84px;
@@ -246,6 +246,17 @@ header > img.mobile {
 
   .gallery-item {
     height: inherit;
+  }
+
+  #footer-section {
+    background-color: #414246;
+    max-width: 100%;
+  }
+
+  #footer-section > :first-child,
+  #footer-content p:first-of-type,
+  #footer-content p:last-of-type {
+    color: #fff;
   }
 
   #about-logo-wrapper img {
