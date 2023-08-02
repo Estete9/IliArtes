@@ -186,7 +186,6 @@ header nav img {
   font-weight: 900;
   font-size: 2rem;
   background-image: url('./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg');
-  background-clip: text;
   background-size: cover;
   /* stylelint-disable */
   background-clip: text;
@@ -276,7 +275,6 @@ header nav img {
 
 #footer-title {
   background-image: url('./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg');
-  background-clip: text;
   background-size: cover;
   /* stylelint-disable */
   background-clip: text;
@@ -460,7 +458,6 @@ footer {
   #hero-section > .title {
     font-size: 4rem;
     background-image: url('./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg');
-    background-clip: text;
     background-size: cover;
     /* stylelint-disable */
     background-clip: text;
