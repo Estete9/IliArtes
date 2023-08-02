@@ -68,7 +68,7 @@ for (let i = 0; i < productsArr.length; i += 1) {
       ${productsArr[i].name}
       </h3>
       <p>
-      ${productsArr[i].materials.join(" | ")}
+      ${productsArr[i].materials.join(' | ')}
       </p>
       <hr />
       <p>
@@ -79,3 +79,40 @@ for (let i = 0; i < productsArr.length; i += 1) {
   product.innerHTML = productInnerHTML;
   productsList.appendChild(product);
 }
+
+// MOBILE MENU LOGIC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+const mobileMenu = document.querySelector('header nav img');
+const menu = document.getElementById('menu');
+const menuClose = document.querySelector('header > img');
+const menuItems = Array.from(document.querySelectorAll('#menu a'));
+let showMenu = true;
+
+function openMobileMenu() {
+  if (showMenu) {
+    console.log('open menu');
+    menu.className = 'mobile';
+    menuClose.className = 'mobile';
+
+    for (let i = 0; i < menuItems.length; i += 1) {
+      menuItems[i].className = 'mobile';
+    }
+
+    showMenu = false;
+  }
+}
+
+function closeMenu() {
+  if (!showMenu) {
+    console.log('close menu');
+    menu.className = '';
+    menuClose.className = '';
+
+    for (let i = 0; i < menuItems.length; i += 1) {
+      menuItems[i].className = '';
+    }
+    showMenu = true;
+  }
+}
+
+mobileMenu.addEventListener('click', openMobileMenu);
+menuClose.addEventListener('click', closeMenu);
