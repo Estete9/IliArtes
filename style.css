@@ -189,6 +189,7 @@ header nav img {
   background-size: cover;
   /* stylelint-disable */
   background-clip: text;
+  -webkit-background-clip: text;
   /* stylelint-enable */
   color: transparent;
 }
@@ -278,6 +279,7 @@ header nav img {
   background-size: cover;
   /* stylelint-disable */
   background-clip: text;
+  -webkit-background-clip: text;
   /* stylelint-enable */
   color: transparent;
   margin-right: auto;
@@ -461,6 +463,7 @@ footer {
     background-size: cover;
     /* stylelint-disable */
     background-clip: text;
+    -webkit-background-clip: text;
     /* stylelint-enable */
     color: transparent;
     margin-right: auto;
