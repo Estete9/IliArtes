@@ -246,6 +246,7 @@ header nav img {
   max-height: 100px;
   padding: 15px;
 }
+
 #footer-title {
   background-image: url(./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg);
   background-clip: text;
@@ -555,6 +556,7 @@ footer {
   #materials-wrapper > .cta {
     display: none;
   }
+
   #materials-wrapper > a {
     display: flex;
     margin-top: 2%;
@@ -579,6 +581,7 @@ footer {
   #products-section > .cta.more {
     display: none;
   }
+  
   footer {
     display: block;
   }
