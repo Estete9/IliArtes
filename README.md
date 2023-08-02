@@ -149,6 +149,7 @@ If you like this project remember to star and share it 🥳️
 
 - Behance template by: [CIndy Lin](https://www.behance.net/adagio07)
 - Twitter, Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>, via Wikimedia Commons
+- <a href="https://www.freepik.com/free-photo/people-making-paper-flowers-craft-art-work-handicraft_2861213.htm#query=arts%20and%20crafts&position=10&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik
 
 <!-- LICENSE -->
 
