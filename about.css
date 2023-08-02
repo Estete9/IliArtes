@@ -103,11 +103,13 @@ header > img {
   0%,
   100% {
     transform: scale(0.8);
+
     /* Initial and final size of the image */
   }
 
   50% {
     transform: scale(1.2);
+
     /* Scale the image up during the "heartbeat" */
   }
 }
@@ -247,11 +249,13 @@ header > img {
     0%,
     100% {
       transform: scale(0.8);
+
       /* Initial and final size of the image */
     }
 
     50% {
       transform: scale(1.2);
+      
       /* Scale the image up during the "heartbeat" */
     }
   }
