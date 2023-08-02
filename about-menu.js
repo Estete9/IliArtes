@@ -1,10 +1,11 @@
 const mobileMenBtn = document.querySelector('header nav img');
-const closeBtn = document.getElementById('close-btn');
+const closeBtn = document.querySelector('header > img');
 const menu = document.getElementById('menu');
 const menuItems = Array.from(document.querySelectorAll('#menu a'));
 
 function openMobileMenu() {
   menu.className = 'mobile';
+  closeBtn.className = 'mobile';
 
   for (let id = 0; id < menuItems.length; id += 1) {
     const menuItem = menuItems[id];

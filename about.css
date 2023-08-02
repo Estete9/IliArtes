@@ -5,9 +5,9 @@
   background-image: url('./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg');
   /* stylelint-disable */
   background-clip: text;
+  -webkit-background-clip: text;
   /* stylelint-enable */
   background-size: cover;
-  -webkit-background-clip: text;
   color: transparent;
   margin-right: auto;
 }
@@ -41,9 +41,14 @@ header > img {
   max-height: 25px;
 }
 
+header > img.mobile {
+  display: flex;
+  max-height: 25px;
+}
+
 #about-wrapper {
   height: 90vh;
-  background-image: url(../assets/Mobile/hero/mobile-bkg-with-icons.jpg);
+  background-image: url('../assets/Mobile/hero/mobile-bkg-with-icons.jpg');
   background-repeat: no-repeat;
   background-size: 110%;
   padding: 10px 0;
@@ -57,13 +62,13 @@ header > img {
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../assets/Mobile/about/Hero-convention.jpg);
+  background-image: url('../assets/Mobile/about/Hero-convention.jpg');
 }
 
 .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: #ff000080;
   color: white;
   display: flex;
   justify-content: center;
@@ -97,6 +102,8 @@ header > img {
 
 #about-logo-wrapper img {
   animation: heartbeat 4s infinite;
+  width: 185px;
+  height: 182px;
 }
 
 @keyframes heartbeat {
@@ -147,7 +154,7 @@ header > img {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 900;
-  color: #ac5992;
+  color: #ec4327;
   transition: all;
   transition-duration: 0.3s;
   padding: 5px;
@@ -195,11 +202,11 @@ header > img {
 #menu.mobile {
   display: flex;
   position: fixed;
+  inset: 2vh;
   top: 2vh;
   bottom: 2vh;
   left: 2vh;
-  right: 2vh;
-  background-color: #ac5992a2;
+  background-color: #ec4427;
 }
 
 #menu a.mobile {
@@ -214,6 +221,7 @@ header > img {
   }
 
   #menu {
+    flex-direction: row;
     display: flex;
   }
 
@@ -222,8 +230,8 @@ header > img {
   }
 
   #about-logo-wrapper {
-    width: 20%;
-    margin-top: 100px;
+    margin-top: 10%;
+    height: 100px;
   }
 
   #about-gallery {
@@ -241,7 +249,7 @@ header > img {
   }
 
   #about-logo-wrapper img {
-    max-height: 300px;
+    /* max-height: 300px; */
     animation: heartbeat 4s infinite;
   }
 
@@ -270,8 +278,11 @@ header > img {
     letter-spacing: 0.48px;
   }
 
+  #menu a:last-child {
+    color: #ec4327;
+  }
+
   #menu a:hover {
-    border: 2px solid #ac5992;
     border-collapse: collapse;
     font-size: 1.5rem;
   }
