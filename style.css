@@ -35,6 +35,20 @@ header {
   gap: 20px;
 }
 
+header > img {
+  display: none;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  height: 50px;
+  width: auto;
+}
+
+header nav img {
+  width: 10%;
+  margin-left: 5%;
+}
+
 .social img {
   height: 15px;
   width: auto;
@@ -62,15 +76,6 @@ header {
   margin-right: auto;
 }
 
-header > img {
-  display: none;
-  position: absolute;
-  top: 3%;
-  right: 5%;
-  height: 50px;
-  width: auto;
-}
-
 header > img.mobile {
   display: flex;
   max-height: 25px;
@@ -78,11 +83,6 @@ header > img.mobile {
 
 header nav {
   display: contents;
-}
-
-header nav img {
-  width: 10%;
-  margin-left: 5%;
 }
 
 #logo {
@@ -95,6 +95,11 @@ header nav img {
   font-weight: 700;
   line-height: 20px;
   color: black;
+}
+
+.material > img {
+  width: 57.085px;
+  height: 51.733px;
 }
 
 #logo-mobile img {
@@ -136,11 +141,6 @@ header nav img {
   align-items: center;
 }
 
-#menu li:last-child {
-  border: 5px solid #ec4427;
-  padding: 0;
-}
-
 #materials-wrapper > a {
   display: none;
   color: #fff;
@@ -165,27 +165,14 @@ header nav img {
   line-height: normal;
 }
 
-#menu li:last-child a {
-  color: #ec4327;
-}
-
-#menu li:nth-child(2) a {
-  color: #ec4327;
-}
-
-#menu a.mobile {
-  color: #fff;
-  font-size: 1.5rem;
-}
-
 #menu a:hover {
   border-collapse: collapse;
   font-size: 1rem;
 }
 
-.material > img {
-  width: 57.085px;
-  height: 51.733px;
+#menu a.mobile {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 #logo-container img {
@@ -582,6 +569,16 @@ footer {
     padding: 13px;
   }
 
+  #menu li:last-child a {
+    color: #ec4327;
+  }
+
+  #menu li:last-child {
+    border: 5px solid #ec4427;
+    padding: 0;
+    margin-right: 12vw;
+  }
+
   #submenu-container {
     display: flex;
   }
@@ -607,6 +604,12 @@ footer {
     align-items: center;
   }
 
+  .material > img {
+    width: 30%;
+    height: auto;
+    justify-self: center;
+  }
+
   #logo > img {
     margin: 0;
     height: 6vw;
@@ -623,6 +626,10 @@ footer {
     /* stylelint-enable */
     color: transparent;
     margin-right: auto;
+  }
+
+  #menu li:nth-child(2) a {
+    color: #ec4327;
   }
 
   #hero-section > .title > span {
@@ -695,12 +702,6 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: auto;
     padding: 12px;
-  }
-
-  .material > img {
-    width: 30%;
-    height: auto;
-    justify-self: center;
   }
 
   .material > h3 {
