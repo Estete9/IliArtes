@@ -104,9 +104,11 @@ header > img {
   100% {
     transform: scale(0.8); /* Initial and final size of the image */
   }
+  
   50% {
     transform: scale(1.2); /* Scale the image up during the "heartbeat" */
   }
+
 }
 
 #about-wrapper hr:first-of-type {
@@ -257,6 +259,7 @@ header > img {
     50% {
       transform: scale(1.2); /* Scale the image up during the "heartbeat" */
     }
+    
   }
 
   #about-wrapper p:nth-of-type(2) {
