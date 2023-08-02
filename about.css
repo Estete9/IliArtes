@@ -3,7 +3,9 @@
   line-height: 44px;
   font-size: 4rem;
   background-image: url('./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg');
+  /* stylelint-disable */
   background-clip: text;
+  /* stylelint-enable */
   background-size: cover;
   -webkit-background-clip: text;
   color: transparent;
@@ -36,10 +38,6 @@ header > img {
   right: 5%;
   height: 50px;
   width: auto;
-}
-
-header > img {
-  display: flex;
   max-height: 25px;
 }
 
@@ -78,6 +76,7 @@ header > img {
   flex-direction: column;
   gap: 30px;
   margin-top: 35px;
+  width: 100%;
 }
 
 #TODO-change {
@@ -94,14 +93,6 @@ header > img {
   flex-direction: column;
   align-items: center;
   margin: 0 20px;
-}
-
-#gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 35px;
-  width: 100%;
 }
 
 #about-logo-wrapper img {
@@ -135,6 +126,7 @@ header > img {
   padding: 20px 12px;
   margin-bottom: 50px;
 }
+
 #about-wrapper p:nth-of-type(2) {
   display: flex;
   flex-direction: column;
@@ -146,6 +138,7 @@ header > img {
   margin: 0 8%;
   margin-bottom: 25px;
 }
+
 #about-wrapper p:nth-of-type(2) > a {
   margin-top: 5px;
   text-decoration: none;
@@ -249,6 +242,7 @@ header > img {
   .gallery-item {
     height: inherit;
   }
+
   #about-logo-wrapper img {
     max-height: 300px;
     animation: heartbeat 4s infinite;
@@ -259,6 +253,7 @@ header > img {
     100% {
       transform: scale(0.8); /* Initial and final size of the image */
     }
+
     50% {
       transform: scale(1.2); /* Scale the image up during the "heartbeat" */
     }
