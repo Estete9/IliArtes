@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Ili Artes Readme</b></h3>
@@ -153,6 +153,6 @@ I would like to thank Microverse for the support.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](/MIT.md) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
