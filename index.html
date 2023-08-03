@@ -3,10 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ili Artes - crafts</title>
   </head>
   <body>
+    <header>
+      <div id="submenu-container">
+        <ul id="submenu">
+          <li class="submenu-item social">
+            <img src="./assets/icons/whiteFB.png" alt="" />
+          </li>
+          <li class="submenu-item social">
+            <img src="./assets/icons/Twitter_bird.png" alt="" />
+          </li>
+          <li class="submenu-item">English</li>
+          <li class="submenu-item">My Page</li>
+          <li class="submenu-item">Logout</li>
+        </ul>
+      </div>
+      <nav>
+        <img
+          id="menu-btn"
+          src="./assets/icons/menu-btn.png"
+          alt="menu button"
+        />
+      </nav>
+      <ul id="menu">
+        <li id="logo-container">
+          <a id="logo" href="./index.html"
+            ><img src="./assets/Mobile/about/Logo.svg" alt=""
+          /></a>
+        </li>
+        <li class="menu-item"><a href="./about.html">About</a></li>
+        <li class="menu-item"><a href="/">Program</a></li>
+        <li class="menu-item"><a href="/">Join</a></li>
+        <li class="menu-item"><a href="/">Sponsor</a></li>
+        <li class="menu-item"><a href="/">News</a></li>
+        <li class="menu-item"><a href="./index.html">CC Campain</a></li>
+      </ul>
+      <div id="logo-container-mobile">
+        <a id="logo-mobile" href="./index.html"
+          ><img src="./assets/Mobile/about/Logo.svg" alt=""
+        /></a>
+      </div>
+      <img src="./assets/icons/menu-close.svg" alt="" />
+    </header>
+    <main>
+      <section id="hero-section">
+        <h3 class="subtitle">Une, pinta, crea.</h3>
+        <h1 class="title">Ili Artes<br /><span>Arte en tus manos!</span></h1>
+        <p>
+          A joyful celebration believing in the value of openness and sharing,
+          creating a positive change with people from over 80 countries is
+          taking place in October, in Korea.
+        </p>
+        <p>2015.10.15(THU) ~ 16(FRI)</p>
+        <p>@ National Museum of Karea, Art Center Nabi and more</p>
+      </section>
+      <section id="material-section">
+        <article id="materials-wrapper">
+          <h1 class="section-title" id="material-section-title">
+            Materia Prima
+          </h1>
+          <hr />
+          <div id="materials">
+            <ul class="materials-list">
+              <li class="material">
+                <img
+                  id="material-img"
+                  src="./assets/Mobile/main-program/Img1.png"
+                  alt="material's icon"
+                />
+                <h3 class="material-title">Papel y cartulina</h3>
+                <p>
+                  Listen to the speakers from various countries about the
+                  messages of sharing and opening.
+                </p>
+              </li>
+              <li class="material">
+                <img src="./assets/Mobile/main-program/Img2.png" alt="" />
+                <h3 class="material-title">Fomix</h3>
+                <p>
+                  Appreciate various creations applying CC license of artists,
+                  organized from Art Center Nabi
+                </p>
+              </li>
+              <li class="material">
+                <img src="./assets/Mobile/main-program/Img3.png" alt="" />
+                <h3 class="material-title">Tela</h3>
+                <p>
+                  Have the time to share your thoughts and opinions with experts
+                  for each topic.
+                </p>
+              </li>
+              <li class="material">
+                <img src="./assets/Mobile/main-program/Img4.png" alt="" />
+                <h3 class="material-title">Artes mixtas</h3>
+                <p>
+                  Try creating your own work using open source license rather
+                  than just watching at it.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <button class="cta">Contáctame</button>
+          <a href="/">MIRA TODOS LOS MATERIALES</a>
+        </article>
+      </section>
+      <section id="products-section">
+        <div id="products-wrapper">
+          <h1 class="section-title">Crafts</h1>
+          <hr />
+          <section id="products-list">
+            <!-- DYNAMICALLY POPULATED main.js -->
+          </section>
+        </div>
+        <button class="cta more">
+          <img src="./assets/icons/down-arrow.png" />
+        </button>
+      </section>
+    </main>
+    <footer>
+      <section id="partners">
+        <h1 class="section-title">Partner</h1>
+        <hr />
+        <ul id="partners-list">
+          <li><img src="./assets/Desktop/footer/google-logo.png" alt="" /></li>
+          <li><img src="./assets/Desktop/footer/Cricut.png" alt="" /></li>
+          <!-- <li><img src="./assets/Desktop/footer/google-logo.png" alt="" /></li> -->
+        </ul>
+      </section>
+      <section id="footer-section">
+        <h1 id="footer-title">SUÍGUEME AQUÍ:</h1>
+        <div id="footer-content">
+          <p>2015 Creative Commons Korea. Some Rights Reserved.</p>
+          <p>
+            달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈
+            저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다. 자세한
+            이용기능 내용과 허락조건은
+            http://creativecommons.org/licences/by/2.0/kr 를 보세요.
+          </p>
+        </div>
+      </section>
+    </footer>
     <script src="./main.js" type="text/javascript"></script>
   </body>
 </html>
