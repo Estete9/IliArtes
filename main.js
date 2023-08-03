@@ -55,12 +55,27 @@ const moreBtn = document.querySelector('.cta.more');
 
 let expanded = false;
 
+const mediaQueryDesktop = window.matchMedia('(min-width: 768px)');
+
+function isMobile(x) {
+  if (x.matches) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function populateProducts() {
   productsList.innerHTML = '';
   let counter = 0;
-
-  if (!expanded) {
-    counter = 2;
+  console.log('query ' + mediaQueryDesktop);
+  console.log('is mobile ' + isMobile(mediaQueryDesktop));
+  if (!isMobile(mediaQueryDesktop)) {
+    if (!expanded) {
+      counter = 2;
+    } else {
+      counter = productsArr.length;
+    }
   } else {
     counter = productsArr.length;
   }
