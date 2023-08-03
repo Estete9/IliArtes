@@ -60,7 +60,8 @@ const mediaQueryDesktop = window.matchMedia('(min-width: 768px)');
 function isMobile(x) {
   if (x.matches) {
     return true;
-  } 
+  }
+  return false;
 }
 
 function populateProducts() {
