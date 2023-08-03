@@ -55,12 +55,23 @@ const moreBtn = document.querySelector('.cta.more');
 
 let expanded = false;
 
+const mediaQueryDesktop = window.matchMedia('(min-width: 768px)');
+
+function isMobile(x) {
+  if (x.matches) {
+    return true;
+  } 
+}
+
 function populateProducts() {
   productsList.innerHTML = '';
   let counter = 0;
-
-  if (!expanded) {
-    counter = 2;
+  if (!isMobile(mediaQueryDesktop)) {
+    if (!expanded) {
+      counter = 2;
+    } else {
+      counter = productsArr.length;
+    }
   } else {
     counter = productsArr.length;
   }
@@ -118,7 +129,6 @@ let showMenu = true;
 function openMobileMenu() {
   if (showMenu) {
     logoContainer.style.display = 'none';
-    console.log('open menu');
     menu.className = 'mobile';
     menuClose.className = 'mobile';
 
@@ -132,7 +142,6 @@ function openMobileMenu() {
 
 function closeMenu() {
   if (!showMenu) {
-    console.log('close menu');
     menu.className = '';
     menuClose.className = '';
 

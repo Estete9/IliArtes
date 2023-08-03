@@ -622,6 +622,11 @@ footer {
     width: 14vw;
   }
 
+  #hero-section {
+    padding: 55px;
+    height: 75vh;
+  }
+
   #hero-section > .title {
     font-size: 4rem;
     background-image: url('./assets/Mobile/hero/wallpaperflare.com_wallpaper.jpg');
